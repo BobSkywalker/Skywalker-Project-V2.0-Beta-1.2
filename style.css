@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*All body configuration*/
+
+body {
+  background-image: url(878357.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*Navbar Configuration*/
+
+.navlist {
+  background-color: #0d1930;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.navlist a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font: normal 14pt arial;
+  padding: 8px;
+}
+.topnav a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font: normal 12pt arial;
+  float: right;
+  transition: 0.2s ease-in-out;
+  width: 100px;
+}
+.topnav a:hover {
+  background-color: rgba(248, 246, 98, 0.911);
+  display: block;
+  transition: 0.2s ease-in-out;
+  width: 120%;
+}
+
+/*Button Configs*/
+
+button {
+  background-color: rgb(61, 69, 116);
+  color: rgb(255, 0, 0);
+  padding: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 7px black;
+  font: normal 14pt arial;
+}
+button:hover {
+  background-color: gray;
+  transition: 0.5s ease-in-out;
+}
+button:not(:hover) {
+  transition: 0.5s ease-in-out;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+/*Games and list config*/
+
+.prin {
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  transition: height 2s;
+  height: 0px;
+  overflow: hidden;
+  margin: auto;
+}
+ul {
+  background-image: url(346792.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 25px;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 1px 1px 8px black;
+  width: 600px;
+  border-radius: 20px;
+}
+ul a {
+  text-decoration: none;
+  font-size: x-large;
+  color: rgb(115, 255, 255);
+  text-shadow: 1px 1px 10px black;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+ul a:hover {
+  color: red;
+  transition: 0.2s ease-in-out;
+}
+.prin.active {
+  display: flex;
+  justify-content: center;
+  pointer-events: all;
+  height: 465px;
+  transition: height 2s;
+}
+
+/*Help text*/
+
+aside {
+  background-image: linear-gradient(to bottom, #085046, #182c63, #193049);
+  width: 300px;
+  border-radius: 20px;
+  height: 280px;
+  padding: 20px;
+  margin-top: 40px;
+  position: fixed;
+}
+aside h1 {
+  color: white;
+  text-indent: 20px;
+  font: normal 17pt arial;
+}
+aside p {
+  margin-top: 10px;
+  color: white;
+  font: normal 15pt arial;
+}
+
+/*Creator biografy text*/
+
+.creator {
+  width: 1100px;
+  margin: auto;
+  background-color: rgb(32, 32, 63);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.creator h1 {
+  text-align: center;
+  color: white;
+  font: bold 25pt arial;
+  text-shadow: 1px 1px 10px black;
+  margin-bottom: 10px;
+}
+.creator p {
+  font: bold 14pt arial;
+  color: rgba(255, 255, 255, 0.836);
+  text-indent: 15px;
+  padding: 1px;
+}
+.topnav.active :hover {
+  background-color: rgb(202, 202, 202);
+  transition: width 0.5s ease-in-out;
+  width: 100px;
+}
+.topnav a:not(:hover) {
+  transition: width 0.5s ease-in-out;
+  width: 100%;
+}
+
+/*All smartphones screens*/
+
+@media (max-width: 600px){
+  body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .navlist{
+    width: 100%;
+  }
+  .creator {
+    width: 400px;
+    height: 700px;
+    position: static;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .creator h1 {
+    font: normal 18pt arial;
+  }
+  .creator p {
+    font: normal 10pt arial;
+  }
+  .asid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  aside {
+    width: 300px;
+    height: 200px;
+    position: static;
+    margin-top: 10px;
+  }
+  aside p {
+    font: normal 10pt arial;
+    position: relative;
+  }
+  ul {
+    width: 200px;
+    height: 270px;
+    padding: 15px;
+  }
+  ul a {
+    font: normal 10pt arial;
+  }
+  .prin.active {
+    display: flex;
+    justify-content: center;
+    pointer-events: all;
+    height: 300px;
+    transition: height 2s;
+  }
+  body::-webkit-scrollbar {
+  display: none;
+}
+}
+
+/*Tablets and Old computer screens*/
+
+@media only screen and (min-width: 600px) and (max-width: 1300px){
+  aside{
+    position: static;
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+  }
+  .creator{
+    position: static;
+    width: 700px;
+  }
+  body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/*New computer large and big screens*/
+
+@media (min-width: 1300px){
+  aside{
+    position: static;
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+  }
+  .creator{
+    position: static;
+  }
+  body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+}
